@@ -1,0 +1,136 @@
+/* body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#container div:not(:first-child){
+  padding: 3px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.inner {
+  background-color: yellow;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 35px;
+  top: 40px;
+}
+
+.triangle-bottom-left {
+  background-color: transparent;
+  position: relative;
+  left: 38px;
+  top: 40px;
+  width: 0;
+  height: 0;
+  border-bottom: 75px solid green;
+  border-right: 75px solid transparent;
+}
+
+button {
+  background-color: cornflowerblue;
+  border: none;
+  font-size: 15px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 10px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#outer {
+  background-color: green;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#inner {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+}
+
+button {
+  position: relative;
+  background-color: cornflowerblue;
+  border: none;
+  font-size: 14px;
+  color: #ffffff;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  transition-duration: 0.2s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+}
+
+.triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.rectangle {
+  clip-path: polygon(0 21%, 100% 21%, 100% 80%, 0 81%);
+}
+.circle {
+  clip-path: circle(50% at 50% 50%);
+}
+.diamond {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
